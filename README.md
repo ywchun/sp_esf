@@ -1,19 +1,23 @@
 # sp_esf
 R code and data files in Spatial Regression Analysis using Eigenvector Spatial Filtering are available on this site. 
 
-R code files: 
-  Ch7_CorpusChrist.R
-  Ch8_CorpusChrist.R
-  functions.R
+R code files: <br>
+  Ch7_CorpusChrist.R <br>
+  Ch8_CorpusChrist.R <br>
+  functions.R <br>
+<br>
+<br>
 
-Data files: 
+Data files: <br>
   TX_counties.zip <br>
-  TX_counties_spcs.zip
-  TX_Flows_counties.zip
-  DFW_MSA.zip
-  CorpusChristi.zip
+  TX_counties_spcs.zip <br>
+  TX_Flows_counties.zip <br>
+  DFW_MSA.zip <br>
+  CorpusChristi.zip <br>
+ <br>
+ <br>
  
-Software: 
-  SAAR (Spatial Analysis using ArcGIS Engine and R)
-  ESF Tool
-  Reference: Koo, Chun, and Griffith (2018)
+Software: <br>
+  SAAR (Spatial Analysis using ArcGIS Engine and R) <br>
+  ESF Tool <br>
+  Reference: Koo, Chun, and Griffith (2018) <br>
