@@ -18,6 +18,6 @@ Data files: <br>
  <br>
  
 Software: <br>
-  <li>SAAR (Spatial Analysis using ArcGIS Engine and R) <br>
-  <li>ESF Tool <br>
+  <li><a href="http://TheSAAR.github.io">SAAR: Spatial Analysis using ArcGIS Engine and R</a> <a> on GitHub</a> <br>
+  <li><a href="https://github.com/esftool/esftool">ESF Tool</a><a> on GitHub</a> <br>
   <li><a> Reference: Koo, Chun, and Griffith (</a><a href="http://dx.doi.org/10.1111/tgis.12452">2018</a><a>)</a <br>
