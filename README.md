@@ -2,9 +2,9 @@
 R code and data files in Spatial Regression Analysis using Eigenvector Spatial Filtering are available on this site. 
 
 R code files: <br>
-  Ch7_CorpusChrist.R <br>
-  Ch8_CorpusChrist.R <br>
-  functions.R <br>
+  <li>Ch7_CorpusChrist.R <br>
+  <li>Ch8_CorpusChrist.R <br>
+  <li>functions.R <br>
 <br>
 <br>
 
