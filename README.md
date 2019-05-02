@@ -4,12 +4,12 @@ R code and data files in Spatial Regression Analysis using Eigenvector Spatial F
 R code files: <br>
   <li>Ch7_CorpusChrist.R <br>
   <li>Ch8_CorpusChrist.R <br>
+  <li>Ch9_Texas.R <br>    
   <li>functions.R <br>
 <br>
 <br>
 
 Data files: <br>
-  <li>TX_counties.zip <br>
   <li>TX_counties_spcs.zip <br>
   <li>TX_Flows_counties.zip <br>
   <li>DFW_MSA.zip <br>
