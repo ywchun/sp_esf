@@ -296,30 +296,37 @@ asp.mq.g <- cutree(asp.mq, k=4)
 table(asp.mq.g)
 
 # with coordinates (Table 9.14)
-cent <- coordinates(tx.poly)
-txc.df <- tx.df
-txc.df$x <- cent[,1]
-txc.df$y <- cent[,2]
+c.x <- as.numeric(as.vector(tx.poly$INTPTLON)) 
+c.y <- as.numeric(as.vector(tx.poly$INTPTLAT))
+
+# MESF for the longitudes and latitudes 
+lm.full <- lm(c.x ~ ., data=EV)
+sf.x <- stepwise(lm.full, lm(c.x ~ 1, data=EV), sle=0.1, sls=0.1001, verbose=FALSE)
+esf.x <- sf.x$fitted.values
+asp.x <- sf.x$coefficients[1] + residuals(sf.x)
+
+lm.full <- lm(c.y ~ ., data=EV)
+sf.y <- stepwise(lm.full, lm(c.y ~ 1, data=EV), sle=0.1, sls=0.1001, verbose=FALSE)
+esf.y <- sf.y$fitted.values
+asp.y <- sf.y$coefficients[1] + residuals(sf.y)
+
+txc.df <- cbind(tx.df, c.x, c.y)
 txc.dist <- dist(scale(txc.df))^2
 
 txc.ward <- hclust(txc.dist, method="ward.D2")
 txc.ward.g <- cutree(txc.ward, k=4)
-table(txc.ward.g)
+table(txc.ward.g)		# Table 9.14, column 1
 
-esfc.df <- esf.df
-esfc.df$x <- cent[,1]
-esfc.df$y <- cent[,2]
+esfc.df <- cbind(esf.df, esf.x, esf.y)
 esfc.dist <- dist(scale(esfc.df))^2
 
 esfc.ward <- hclust(esfc.dist, method="ward.D2")
 esfc.ward.g <- cutree(esfc.ward, k=4)
-table(esfc.ward.g)
+table(esfc.ward.g)		# Table 9.14, column 2
 
-aspc.df <- asp.df
-aspc.df$x <- cent[,1]
-aspc.df$y <- cent[,2]
+aspc.df <-  cbind(asp.df, asp.x, asp.y)
 aspc.dist <- dist(scale(aspc.df))^2
 
 aspc.ward <- hclust(aspc.dist, method="ward.D2")
 aspc.ward.g <- cutree(aspc.ward, k=4)
-table(aspc.ward.g)
+table(aspc.ward.g)		# Table 9.14, column 3
