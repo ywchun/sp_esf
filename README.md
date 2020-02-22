@@ -10,11 +10,10 @@ R code files: <br>
 <br>
 
 Data files: <br>
-  <li>TX_counties_spcs.zip 
-      Texas county shapefile (SPCS)<br>
-  <li>TX_Flows_counties.zip <br>
-  <li>DFW_MSA.zip <br>
-  <li>CorpusChristi.zip <br>
+  <li>TX_counties_spcs.zip: Texas county shapefile (SPCS)<br>
+  <li>TX_Flows_counties.zip: Intercounty flows shapefile <br>
+  <li>DFW_MSA.zip: DFW MSA shapefle <br>
+  <li>CorpusChristi.zip: Corpous Christi dataset <br>
   <li>Ch2_Specimen_data.zip: Specimen data in Chapter 2 (41-by-41 squares for a small area in Houston) <br>
  <br>
  <br>
